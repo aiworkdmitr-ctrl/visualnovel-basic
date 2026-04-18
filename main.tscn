@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://path/to/YOUR_RESOURCE.tres" type="Resource" id=1]
+
+[node name="Main" type="Control"]
+
+    # Set the root node to make it responsive
+    rect_position = Vector2(0, 0)
+    rect_size = Vector2(1080, 2460)
+
+    # Create a background
+    node_name = "Background"
+    type = "TextureRect"
+    texture = ExtResource(1)  # Use your texture resource here
+    stretch_mode = "scale_keep_aspect"  # Responsive scaling
+    rect_size = rect_size
+
+    # Create a UI Container
+    node_name = "UIContainer"
+    type = "VBoxContainer"  # Use VBox for vertical layout
+
+        # Title label
+        node_name = "TitleLabel"
+        type = "Label"
+        text = "Your Title Here"
+        rect_size = Vector2(0, 100)
+
+        # Start Button
+        node_name = "StartButton"
+        type = "Button"
+        text = "Start"
+        rect_size = Vector2(200, 100)  # Set the button size
+    
+    # Add more UI elements as needed...  
