@@ -1,0 +1,16 @@
+[general]
+config_version=3
+
+[display]
+width=1080
+height=2460
+fullscreen=false
+orientation=portrait
+
+[application]
+name="Visual Novel Basic"
+vendor="YourName"
+version="1.0.0"
+
+[run]
+system="mobile"
